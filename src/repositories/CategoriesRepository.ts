@@ -1,4 +1,4 @@
-import { CreateCategoryDTO } from "../dto/CreateCategoryDTO";
+import { ICreateCategoryDTO } from "../dto/ICreateCategoryDTO";
 import { Category } from "../model/Category";
 import { ICategoriesRepository } from "./ICategoriesRepository";
 
@@ -9,7 +9,7 @@ class CategoriesRepository implements ICategoriesRepository {
         this.categories = [];
     }
 
-    create({ name, description }: CreateCategoryDTO): void {
+    create({ name, description }: ICreateCategoryDTO): void {
         const category = new Category();
 
         Object.assign(category, {
