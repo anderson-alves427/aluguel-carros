@@ -5,6 +5,7 @@ import { ICategoriesRepository } from "../interfaces/ICategoriesRepository";
 class CategoriesRepository implements ICategoriesRepository {
     private categories: Category[];
 
+    // eslint-disable-next-line no-use-before-define
     private static INSTANCE: CategoriesRepository;
 
     private constructor() {
