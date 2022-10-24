@@ -44,7 +44,6 @@ class ImportCategoryUseCase {
 
         categories.map(async (category) => {
             const { name, description } = category;
-            console.log(name);
             const existCategory = this.categoriesRepository.findByName(name);
 
             if (!existCategory) {
