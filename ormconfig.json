@@ -12,6 +12,6 @@
         "entitiesDir": ".src/modules/cars/entities"
       },
       "entities": [
-        "./src/cars/entities/**/*{.ts,.js}" 
+        "./src/modules/cars/entities/**/*{.ts,.js}" 
     ]
 }
